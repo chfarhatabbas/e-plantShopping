@@ -19,6 +19,7 @@
 
 .cart-item-details {
   flex-grow: 1;
+  padding-left: 15px;;
 }
 
 .cart-item-name {
@@ -183,7 +184,8 @@
     .cart-item {
       flex-direction: column; /* Change flex direction to stack items vertically */
       align-items: flex-start; /* Align items to the start of the container */
-      width: 100%; /* Set width to full width */
+      width: 100%;
+      max-width:500px; /* Set width to full width */
     }
   
     .cart-item-image {
@@ -234,7 +236,7 @@
     font-size: 23px;
     border: none;
     border-radius: 5px;
-    background-color: #4caf50;
+    background-color: #007b20;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;

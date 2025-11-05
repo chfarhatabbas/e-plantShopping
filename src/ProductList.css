@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #4CAF50;
+    background-color: #007b20;
     color: #fff!important;
     padding: 15px;
     display: flex;
@@ -44,9 +44,23 @@ body {
     display:flex;
     flex-direction: column;
     width: 100vw;
+    max-width: 1700px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
+.product-title-grid{
+    text-align: center;
+    margin: 10px;
+}
+
+.product-title-grid span{
+    border-top:1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    display: inline-block;
+    padding: 5px 50px;
+}
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -91,10 +105,15 @@ body {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+.product-desc{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
 
 .product-image {
     max-width: 100%;
     height: 200px; /* Adjust height for better consistency */
+    margin-bottom: 10px;
 }
 
 .product-button {
@@ -140,14 +159,12 @@ body {
     text-decoration: none;
 }
 .tag {
-    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .tag img {
-    height: 70px;
     width: 70px;
     border-radius: 70%;
     
@@ -157,8 +174,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 650px;
     font-size: 19px;
+}
+.luxury a{
+    padding-left:15px;
 }
 .cart{
     color: white;
@@ -198,7 +217,7 @@ body {
 /* ProductList.css */
 
 .product-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #007b20; /* Green */
     border: none;
     color: white;
     padding: 10px 20px;
@@ -228,7 +247,7 @@ body {
   @media (max-width: 768px) {
     .product-card {
       flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
-      max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
+      max-width: calc(85% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
     }
     .navbar {
         flex-direction: column; /* Change flex direction to stack items vertically */
